@@ -200,6 +200,8 @@ ruleset a169x685 {
       lastOdometer = lastEntry{"odometer"} + 1;
 
       formHTML = <<
+        Hello Phil!
+
         <form id="formAddGasMileageEntry" class="form-horizontal form-mycloud">
           <fieldset>
             <div class="thumbnail-wrapper">
