@@ -15,7 +15,7 @@ ruleset a169x685 {
     // authz require user
     logging off
 
-		use module a169x701 alias CloudRain
+    use module a169x701 alias CloudRain
     use module a169x676 alias pds
     use module a41x196 alias SquareTag
     use module a41x217 alias Graphing
@@ -28,9 +28,9 @@ ruleset a169x685 {
   }
 
   global {
-		thisRID = meta:rid();
-		thisECI = meta:eci();
-		SquareTagRID = "a41x178";
+    thisRID = meta:rid();
+    thisECI = meta:eci();
+    SquareTagRID = "a41x178";
     myThingsRID = "a169x667";
 
     get_journal_entries = function(){
@@ -175,12 +175,12 @@ ruleset a169x685 {
       entriesArrayFinal
     };
 
-		appMenu = [
-			{
-				"label"  : "Export Data",
-				"action" : "getCSV&token=#{thisECI}"
-			}
-		];
+    appMenu = [
+      {
+        "label"  : "Export Data",
+        "action" : "getCSV&token=#{thisECI}"
+      }
+    ];
   }
 
   rule showGasMileageForm {
